@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 1226px;
+            height: 460px;
+            margin: 100px;
+            position: relative;
+           overflow: hidden;
+        }
+
+        .wrap .photo-item {
+            width: 600%;
+            height: 100%;
+            position: relative;   /*开启可移动模式*/
+        }
+
+        .wrap .photo-item li {
+            float: left;
+        }
+
+        .wrap .arr {
+            width: 50px;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+            top: 50%;
+            margin-top: -50px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .wrap .arr.r {
+            left: auto;
+            right: 0;
+        }
+
+        .wrap .dotts {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .wrap .dotts li {
+            float: left;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;;
+            background-color: #fff;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .wrap .dotts  .act {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <ul class=photo-item>
+        <li><img src="img/m1.jpg" alt=""></li>
+        <li><img src="img/m2.jpg" alt=""></li>
+        <li><img src="img/m3.jpg" alt=""></li>
+        <li><img src="img/m4.jpg" alt=""></li>
+        <li><img src="img/m5.jpg" alt=""></li>
+        <li><img src="img/m1.jpg" alt=""></li>
+    </ul>
+    <div class="arr l "><</div>
+    <div class="arr r">></div>
+    <ul class="dotts">
+        <li class="act"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<script src = index.js></script>
+</body>
+</html>
